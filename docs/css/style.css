@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff"); }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.page {
+  height: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Roboto", "Arial", "sans-serif";
+  overflow-x: hidden; }
+
+.page-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden; }
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 66.2% 31.9%;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px; }
+
+.container-edge {
+  margin: 0 auto;
+  padding-left: 16.8%;
+  padding-right: 16.3%; }
+
+@media (max-width: 919px) {
+  .container-edge {
+    padding-left: 45px;
+    padding-right: 45px; } }
+
+@media (max-width: 767px) {
+  .container-edge {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+.container-background {
+  position: relative;
+  background-color: #f5f6f8; }
+
+.btn {
+  padding: 9px 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Roboto", "Arial", "sans-serif";
+  color: #ffffff;
+  background-color: #4496f6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  .btn:hover, .btn:active {
+    background-color: #347db8; }
+
+/*# sourceMappingURL=style.css.map */
