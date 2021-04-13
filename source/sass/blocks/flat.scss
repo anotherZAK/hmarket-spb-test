@@ -1,16 +1,29 @@
-.flat {
-  display: flex;
+.flat__plan-link {
+  display: block;
+  margin-top: 10px;
+  order: -1;
+}
+
+.flat h1 {
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #383736;
 }
 
 .flat__description-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2%;
+  margin: 0;
+  margin-bottom: 7px;
+  width: 64.7%;
+  min-width: 330px;
 }
 
 .flat__description,
 .flat__description-term {
-  min-width: 120px;
 
   &:nth-of-type(-n + 2) {
     grid-column: 1 / 2;
@@ -27,7 +40,8 @@
 
 .flat__description {
   margin: 0;
-  margin-bottom: 12px;
+  margin-top: -2px;
+  margin-bottom: 10px;
   font-weight: 500;
   color: #383736;
 
@@ -37,10 +51,12 @@
 
   &:nth-of-type(2n) {
     grid-row: 4 / 5;
+    margin-top: -5px;
   }
 }
 
 .flat__description-term {
+  font-size: 12px;
   color: #989691;
 
   &:nth-of-type(2n + 1) {
@@ -48,8 +64,13 @@
   }
 }
 
+.flat__conditions {
+  display: flex;
+}
+
 .flat__conditions-view,
 .flat__conditions-bank {
+  position: relative;
   margin: 0;
   padding-top: 6px;
   padding-right: 16px;
@@ -58,4 +79,97 @@
   font-weight: 500;
   font-size: 12px;
   border-radius: 22px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 45%;
+    left: 20px;
+  }
+}
+
+.flat__conditions-bank {
+  color: #eb4b51;
+  background-color: #faf0f0;
+
+  &::before,
+  &::after {
+    width: 12px;
+    height: 2px;
+    background-color: #eb4b51;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.flat__conditions-view {
+  margin-right: 17px;
+  color: #64b851;
+  background-color: #f2faf0;
+
+  &::before,
+  &::after {
+    height: 2px;
+    background-color: #64b851;
+  }
+  &::before {
+    width: 12px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    width: 5px;
+    transform: rotate(45deg);
+  }
+}
+
+.flat__info {
+  min-width: 237px;
+}
+
+.flat__info p {
+  margin: 0;
+}
+
+.flat__info time {
+  font-weight: 500;
+  color: #2794db;
+}
+
+.flat__info span {
+  font-weight: 500;
+  color: #eb4b51;
+}
+
+.flat__info-title {
+  color: #989691;
+}
+
+.flat__info .flat__info-cost {
+  margin-bottom: 14px;
+  max-width: 210px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #383736;
+
+  &--another {
+    margin-bottom: 23px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #989691;
+  }
+}
+
+.flat__info .flat__info-accept {
+  display: block;
+  min-width: 100%;
+  padding-left: 27%;
 }

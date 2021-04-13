@@ -1,0 +1,44 @@
+.close-btn {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    right: 3px;
+    width: 24px;
+    height: 2px;
+    background-color: #c4c4c4;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #f5f4f2;
+    border-radius: 4px;
+
+    &::before,
+    &::after {
+      background-color: #383736;
+    }
+  }
+
+  &:active {
+    background-color: #e7e4de;
+  }
+}
