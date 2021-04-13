@@ -8,6 +8,7 @@
   border-radius: 8px;
 
   &--flat {
+    position: relative;
     display: grid;
     grid-template-columns: 0.5fr 2.5fr 0.97fr;
     padding-top: 24px;

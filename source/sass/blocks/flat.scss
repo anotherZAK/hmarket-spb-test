@@ -1,5 +1,6 @@
 .flat__plan-link {
   display: block;
+  width: fit-content;
   margin-top: 10px;
   order: -1;
 }
@@ -85,7 +86,7 @@
     position: absolute;
     content: "";
     top: 45%;
-    left: 20px;
+    left: 13px;
   }
 }
 
@@ -95,7 +96,7 @@
 
   &::before,
   &::after {
-    width: 12px;
+    width: 13px;
     height: 2px;
     background-color: #eb4b51;
   }
@@ -115,6 +116,7 @@
 
   &::before,
   &::after {
+    left: 17px;
     height: 2px;
     background-color: #64b851;
   }
@@ -124,13 +126,26 @@
   }
 
   &::after {
+    top: 51%;
+    left: 15px;
     width: 5px;
     transform: rotate(45deg);
   }
 }
 
 .flat__info {
+  position: relative;
   min-width: 237px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -12.5%;
+    width: 1px;
+    height: 178px;
+    background-color: #F0EEEB;
+  }
 }
 
 .flat__info p {
@@ -172,4 +187,7 @@
   display: block;
   min-width: 100%;
   padding-left: 27%;
+  background-image: url("../../img/svg/icon-key.svg");
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
 }
