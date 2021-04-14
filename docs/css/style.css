@@ -78,6 +78,7 @@ img {
           box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
   border-radius: 8px; }
   .modal--flat {
+    position: relative;
     display: grid;
     grid-template-columns: 0.5fr 2.5fr 0.97fr;
     padding-top: 24px;
@@ -87,6 +88,9 @@ img {
 
 .flat__plan-link {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 10px;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
@@ -160,13 +164,13 @@ img {
     position: absolute;
     content: "";
     top: 45%;
-    left: 20px; }
+    left: 13px; }
 
 .flat__conditions-bank {
   color: #eb4b51;
   background-color: #faf0f0; }
   .flat__conditions-bank::before, .flat__conditions-bank::after {
-    width: 12px;
+    width: 13px;
     height: 2px;
     background-color: #eb4b51; }
   .flat__conditions-bank::before {
@@ -181,6 +185,7 @@ img {
   color: #64b851;
   background-color: #f2faf0; }
   .flat__conditions-view::before, .flat__conditions-view::after {
+    left: 17px;
     height: 2px;
     background-color: #64b851; }
   .flat__conditions-view::before {
@@ -188,12 +193,23 @@ img {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
   .flat__conditions-view::after {
+    top: 51%;
+    left: 15px;
     width: 5px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
 
 .flat__info {
+  position: relative;
   min-width: 237px; }
+  .flat__info::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -12.5%;
+    width: 1px;
+    height: 178px;
+    background-color: #F0EEEB; }
 
 .flat__info p {
   margin: 0; }
@@ -227,7 +243,9 @@ img {
   display: block;
   min-width: 100%;
   padding-left: 27%;
-  background-image: url("../../img/svg/icon-key.svg"); }
+  background-image: url("../../img/svg/icon-key.svg");
+  background-repeat: no-repeat;
+  background-position: 20% 50%; }
 
 .container-grid {
   padding-left: calc(10% - 45px);
@@ -251,18 +269,18 @@ img {
 .close-btn {
   position: absolute;
   top: 13px;
-  right: 14px;
-  width: 28px;
-  height: 28px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   border: none;
   cursor: pointer; }
   .close-btn::before, .close-btn::after {
     position: absolute;
     content: "";
-    top: 13px;
-    right: 3px;
-    width: 24px;
+    top: 50%;
+    right: 2px;
+    width: 20px;
     height: 2px;
     background-color: #c4c4c4; }
   .close-btn::before {
@@ -273,9 +291,14 @@ img {
             transform: rotate(-45deg); }
   .close-btn:hover, .close-btn:focus {
     background-color: #f5f4f2;
-    border-radius: 4px; }
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    top: 11px;
+    right: 14px; }
     .close-btn:hover::before, .close-btn:hover::after, .close-btn:focus::before, .close-btn:focus::after {
-      background-color: #383736; }
+      background-color: #383736;
+      right: 3px; }
   .close-btn:active {
     background-color: #e7e4de; }
 

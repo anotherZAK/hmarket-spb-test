@@ -1,19 +1,19 @@
 .container-edge {
   margin: 0 auto;
-  padding-left: 3.1%;
-  padding-right: 3.1%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $desktop-width) {
   .container-edge {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .container-edge {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }

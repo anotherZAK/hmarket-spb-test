@@ -1,4 +1,16 @@
 .container-grid {
-  padding-left: calc(10% - 45px);
   min-width: 41.3%;
+}
+
+@media (max-width: $tablet-width) {
+  .container-grid {
+    margin-left: 6%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container-grid {
+    margin-top: -23px;
+    margin-left: 2.2%;
+  }
 }
